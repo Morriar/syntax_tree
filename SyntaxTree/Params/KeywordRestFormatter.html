@@ -4,21 +4,21 @@
 <head>
 <meta charset="UTF-8">
 
-<title>class SyntaxTree::ParamsKeywordFormatter - RDoc Documentation</title>
+<title>class SyntaxTree::Params::KeywordRestFormatter - RDoc Documentation</title>
 
 <script type="text/javascript">
-  var rdoc_rel_prefix = "../";
-  var index_rel_prefix = "../";
+  var rdoc_rel_prefix = "../../";
+  var index_rel_prefix = "../../";
 </script>
 
-<script src="../js/navigation.js" defer></script>
-<script src="../js/search.js" defer></script>
-<script src="../js/search_index.js" defer></script>
-<script src="../js/searcher.js" defer></script>
-<script src="../js/darkfish.js" defer></script>
+<script src="../../js/navigation.js" defer></script>
+<script src="../../js/search.js" defer></script>
+<script src="../../js/search_index.js" defer></script>
+<script src="../../js/searcher.js" defer></script>
+<script src="../../js/darkfish.js" defer></script>
 
-<link href="../css/fonts.css" rel="stylesheet">
-<link href="../css/rdoc.css" rel="stylesheet">
+<link href="../../css/fonts.css" rel="stylesheet">
+<link href="../../css/rdoc.css" rel="stylesheet">
 
 
 <body id="top" role="document" class="class">
@@ -26,13 +26,13 @@
   <div id="project-navigation">
     <div id="home-section" role="region" title="Quick navigation" class="nav-section">
   <h2>
-    <a href="../index.html" rel="home">Home</a>
+    <a href="../../index.html" rel="home">Home</a>
   </h2>
 
   <div id="table-of-contents-navigation">
-    <a href="../table_of_contents.html#pages">Pages</a>
-    <a href="../table_of_contents.html#classes">Classes</a>
-    <a href="../table_of_contents.html#methods">Methods</a>
+    <a href="../../table_of_contents.html#pages">Pages</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
   </div>
 </div>
 
@@ -81,9 +81,9 @@
   </div>
 </nav>
 
-<main role="main" aria-labelledby="class-SyntaxTree::ParamsKeywordFormatter">
-  <h1 id="class-SyntaxTree::ParamsKeywordFormatter" class="class">
-    class SyntaxTree::ParamsKeywordFormatter
+<main role="main" aria-labelledby="class-SyntaxTree::Params::KeywordRestFormatter">
+  <h1 id="class-SyntaxTree::Params::KeywordRestFormatter" class="class">
+    class SyntaxTree::Params::KeywordRestFormatter
   </h1>
 
   <section class="description">
@@ -99,19 +99,6 @@
         <h3>Attributes</h3>
       </header>
 
-      <div id="attribute-i-name" class="method-detail">
-        <div class="method-heading attribute-method-heading">
-          <span class="method-name">name</span><span
-            class="attribute-access-type">[R]</span>
-        </div>
-
-        <div class="method-description">
-        <dl class="rdoc-list label-list"><dt><a href="Ident.html"><code>Ident</code></a>
-<dd>
-<p>the name of the parameter</p>
-</dd></dl>
-        </div>
-      </div>
       <div id="attribute-i-value" class="method-detail">
         <div class="method-heading attribute-method-heading">
           <span class="method-name">value</span><span
@@ -119,7 +106,7 @@
         </div>
 
         <div class="method-description">
-        <dl class="rdoc-list label-list"><dt>nil | untyped
+        <dl class="rdoc-list label-list"><dt>:nil | <a href="../ArgsForward.html"><code>ArgsForward</code></a> | <a href="../KwRestParam.html"><code>KwRestParam</code></a>
 <dd>
 <p>the value of the parameter</p>
 </dd></dl>
@@ -136,7 +123,7 @@
       <div id="method-c-new" class="method-detail ">
         <div class="method-heading">
           <span class="method-name">new</span><span
-            class="method-args">(name, value)</span>
+            class="method-args">(value)</span>
           <span class="method-click-advice">click to toggle source</span>
         </div>
 
@@ -144,9 +131,8 @@
           
 
           <div class="method-source-code" id="new-source">
-            <pre><span class="ruby-comment"># File lib/syntax_tree/formatter.rb, line 643</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>(<span class="ruby-identifier">name</span>, <span class="ruby-identifier">value</span>)
-  <span class="ruby-ivar">@name</span> = <span class="ruby-identifier">name</span>
+            <pre><span class="ruby-comment"># File lib/syntax_tree/node.rb, line 7922</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>(<span class="ruby-identifier">value</span>)
   <span class="ruby-ivar">@value</span> = <span class="ruby-identifier">value</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
@@ -173,7 +159,7 @@
           
 
           <div class="method-source-code" id="comments-source">
-            <pre><span class="ruby-comment"># File lib/syntax_tree/formatter.rb, line 648</span>
+            <pre><span class="ruby-comment"># File lib/syntax_tree/node.rb, line 7926</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">comments</span>
   []
 <span class="ruby-keyword">end</span></pre>
@@ -194,12 +180,11 @@
           
 
           <div class="method-source-code" id="format-source">
-            <pre><span class="ruby-comment"># File lib/syntax_tree/formatter.rb, line 652</span>
+            <pre><span class="ruby-comment"># File lib/syntax_tree/node.rb, line 7930</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">format</span>(<span class="ruby-identifier">q</span>)
-  <span class="ruby-identifier">q</span>.<span class="ruby-identifier">format</span>(<span class="ruby-identifier">name</span>)
-
-  <span class="ruby-keyword">if</span> <span class="ruby-identifier">value</span>
-    <span class="ruby-identifier">q</span>.<span class="ruby-identifier">text</span>(<span class="ruby-string">&quot; &quot;</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">value</span> <span class="ruby-operator">==</span> <span class="ruby-value">:nil</span>
+    <span class="ruby-identifier">q</span>.<span class="ruby-identifier">text</span>(<span class="ruby-string">&quot;**nil&quot;</span>)
+  <span class="ruby-keyword">else</span>
     <span class="ruby-identifier">q</span>.<span class="ruby-identifier">format</span>(<span class="ruby-identifier">value</span>)
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>

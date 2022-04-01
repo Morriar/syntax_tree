@@ -4,21 +4,21 @@
 <head>
 <meta charset="UTF-8">
 
-<title>class SyntaxTree::AliasArgumentFormatter - RDoc Documentation</title>
+<title>class SyntaxTree::HshPtn::KeywordFormatter - RDoc Documentation</title>
 
 <script type="text/javascript">
-  var rdoc_rel_prefix = "../";
-  var index_rel_prefix = "../";
+  var rdoc_rel_prefix = "../../";
+  var index_rel_prefix = "../../";
 </script>
 
-<script src="../js/navigation.js" defer></script>
-<script src="../js/search.js" defer></script>
-<script src="../js/search_index.js" defer></script>
-<script src="../js/searcher.js" defer></script>
-<script src="../js/darkfish.js" defer></script>
+<script src="../../js/navigation.js" defer></script>
+<script src="../../js/search.js" defer></script>
+<script src="../../js/search_index.js" defer></script>
+<script src="../../js/searcher.js" defer></script>
+<script src="../../js/darkfish.js" defer></script>
 
-<link href="../css/fonts.css" rel="stylesheet">
-<link href="../css/rdoc.css" rel="stylesheet">
+<link href="../../css/fonts.css" rel="stylesheet">
+<link href="../../css/rdoc.css" rel="stylesheet">
 
 
 <body id="top" role="document" class="class">
@@ -26,13 +26,13 @@
   <div id="project-navigation">
     <div id="home-section" role="region" title="Quick navigation" class="nav-section">
   <h2>
-    <a href="../index.html" rel="home">Home</a>
+    <a href="../../index.html" rel="home">Home</a>
   </h2>
 
   <div id="table-of-contents-navigation">
-    <a href="../table_of_contents.html#pages">Pages</a>
-    <a href="../table_of_contents.html#classes">Classes</a>
-    <a href="../table_of_contents.html#methods">Methods</a>
+    <a href="../../table_of_contents.html#pages">Pages</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
   </div>
 </div>
 
@@ -81,15 +81,13 @@
   </div>
 </nav>
 
-<main role="main" aria-labelledby="class-SyntaxTree::AliasArgumentFormatter">
-  <h1 id="class-SyntaxTree::AliasArgumentFormatter" class="class">
-    class SyntaxTree::AliasArgumentFormatter
+<main role="main" aria-labelledby="class-SyntaxTree::HshPtn::KeywordFormatter">
+  <h1 id="class-SyntaxTree::HshPtn::KeywordFormatter" class="class">
+    class SyntaxTree::HshPtn::KeywordFormatter
   </h1>
 
   <section class="description">
     
-<p>Formatters</p>
-
   </section>
 
   <section id="5Buntitled-5D" class="documentation-section">
@@ -101,16 +99,29 @@
         <h3>Attributes</h3>
       </header>
 
-      <div id="attribute-i-argument" class="method-detail">
+      <div id="attribute-i-key" class="method-detail">
         <div class="method-heading attribute-method-heading">
-          <span class="method-name">argument</span><span
+          <span class="method-name">key</span><span
             class="attribute-access-type">[R]</span>
         </div>
 
         <div class="method-description">
-        <dl class="rdoc-list label-list"><dt><a href="DynaSymbol.html"><code>DynaSymbol</code></a> | <a href="SymbolLiteral.html"><code>SymbolLiteral</code></a>
+        <dl class="rdoc-list label-list"><dt><a href="../Label.html"><code>Label</code></a>
 <dd>
-<p>the argument being passed to alias</p>
+<p>the keyword being used</p>
+</dd></dl>
+        </div>
+      </div>
+      <div id="attribute-i-value" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">value</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        <dl class="rdoc-list label-list"><dt>untyped
+<dd>
+<p>the optional value for the keyword</p>
 </dd></dl>
         </div>
       </div>
@@ -125,7 +136,7 @@
       <div id="method-c-new" class="method-detail ">
         <div class="method-heading">
           <span class="method-name">new</span><span
-            class="method-args">(argument)</span>
+            class="method-args">(key, value)</span>
           <span class="method-click-advice">click to toggle source</span>
         </div>
 
@@ -133,9 +144,10 @@
           
 
           <div class="method-source-code" id="new-source">
-            <pre><span class="ruby-comment"># File lib/syntax_tree/formatter.rb, line 78</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>(<span class="ruby-identifier">argument</span>)
-  <span class="ruby-ivar">@argument</span> = <span class="ruby-identifier">argument</span>
+            <pre><span class="ruby-comment"># File lib/syntax_tree/node.rb, line 5839</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>(<span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span>)
+  <span class="ruby-ivar">@key</span> = <span class="ruby-identifier">key</span>
+  <span class="ruby-ivar">@value</span> = <span class="ruby-identifier">value</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
         </div>
@@ -161,13 +173,9 @@
           
 
           <div class="method-source-code" id="comments-source">
-            <pre><span class="ruby-comment"># File lib/syntax_tree/formatter.rb, line 82</span>
+            <pre><span class="ruby-comment"># File lib/syntax_tree/node.rb, line 5844</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">comments</span>
-  <span class="ruby-keyword">if</span> <span class="ruby-identifier">argument</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">SymbolLiteral</span>)
-    <span class="ruby-identifier">argument</span>.<span class="ruby-identifier">comments</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">argument</span>.<span class="ruby-identifier">value</span>.<span class="ruby-identifier">comments</span>
-  <span class="ruby-keyword">else</span>
-    <span class="ruby-identifier">argument</span>.<span class="ruby-identifier">comments</span>
-  <span class="ruby-keyword">end</span>
+  []
 <span class="ruby-keyword">end</span></pre>
           </div>
         </div>
@@ -186,12 +194,13 @@
           
 
           <div class="method-source-code" id="format-source">
-            <pre><span class="ruby-comment"># File lib/syntax_tree/formatter.rb, line 90</span>
+            <pre><span class="ruby-comment"># File lib/syntax_tree/node.rb, line 5848</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">format</span>(<span class="ruby-identifier">q</span>)
-  <span class="ruby-keyword">if</span> <span class="ruby-identifier">argument</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">SymbolLiteral</span>)
-    <span class="ruby-identifier">q</span>.<span class="ruby-identifier">format</span>(<span class="ruby-identifier">argument</span>.<span class="ruby-identifier">value</span>)
-  <span class="ruby-keyword">else</span>
-    <span class="ruby-identifier">q</span>.<span class="ruby-identifier">format</span>(<span class="ruby-identifier">argument</span>)
+  <span class="ruby-identifier">q</span>.<span class="ruby-identifier">format</span>(<span class="ruby-identifier">key</span>)
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">value</span>
+    <span class="ruby-identifier">q</span>.<span class="ruby-identifier">text</span>(<span class="ruby-string">&quot; &quot;</span>)
+    <span class="ruby-identifier">q</span>.<span class="ruby-identifier">format</span>(<span class="ruby-identifier">value</span>)
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
