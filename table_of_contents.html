@@ -33,6 +33,8 @@
     <ul>
       <li><a href="CHANGELOG_md.html#label-Changelog">Changelog</a>
       <li><a href="CHANGELOG_md.html#label-5BUnreleased-5D">[Unreleased]</a>
+      <li><a href="CHANGELOG_md.html#label-2.0.1+-+2022-03-31"><a href="https://github.com/ruby-syntax-tree/syntax_tree/compare/v2.0.0...v2.0.1">2.0.1</a> - 2022-03-31</a>
+      <li><a href="CHANGELOG_md.html#label-Changed">Changed</a>
       <li><a href="CHANGELOG_md.html#label-2.0.0+-+2022-03-31"><a href="https://github.com/ruby-syntax-tree/syntax_tree/compare/v1.2.0...v2.0.0">2.0.0</a> - 2022-03-31</a>
       <li><a href="CHANGELOG_md.html#label-Added">Added</a>
       <li><a href="CHANGELOG_md.html#label-Changed">Changed</a>
@@ -157,7 +159,7 @@
     <a href="SyntaxTree/Alias.html">SyntaxTree::Alias</a>
   </li>
   <li class="class">
-    <a href="SyntaxTree/Alias/AliasArgumentFormatter.html">SyntaxTree::Alias::AliasArgumentFormatter</a>
+    <a href="SyntaxTree/AliasArgumentFormatter.html">SyntaxTree::AliasArgumentFormatter</a>
   </li>
   <li class="class">
     <a href="SyntaxTree/ArgBlock.html">SyntaxTree::ArgBlock</a>
@@ -178,19 +180,10 @@
     <a href="SyntaxTree/ArrayLiteral.html">SyntaxTree::ArrayLiteral</a>
   </li>
   <li class="class">
-    <a href="SyntaxTree/ArrayLiteral/QSymbolsFormatter.html">SyntaxTree::ArrayLiteral::QSymbolsFormatter</a>
-  </li>
-  <li class="class">
-    <a href="SyntaxTree/ArrayLiteral/QWordsFormatter.html">SyntaxTree::ArrayLiteral::QWordsFormatter</a>
-  </li>
-  <li class="class">
-    <a href="SyntaxTree/ArrayLiteral/VarRefsFormatter.html">SyntaxTree::ArrayLiteral::VarRefsFormatter</a>
-  </li>
-  <li class="class">
     <a href="SyntaxTree/AryPtn.html">SyntaxTree::AryPtn</a>
   </li>
   <li class="class">
-    <a href="SyntaxTree/AryPtn/RestFormatter.html">SyntaxTree::AryPtn::RestFormatter</a>
+    <a href="SyntaxTree/AryPtnRestFormatter.html">SyntaxTree::AryPtnRestFormatter</a>
   </li>
   <li class="class">
     <a href="SyntaxTree/Assign.html">SyntaxTree::Assign</a>
@@ -433,10 +426,10 @@
     <a href="SyntaxTree/HshPtn.html">SyntaxTree::HshPtn</a>
   </li>
   <li class="class">
-    <a href="SyntaxTree/HshPtn/KeywordFormatter.html">SyntaxTree::HshPtn::KeywordFormatter</a>
+    <a href="SyntaxTree/HshPtnKeywordFormatter.html">SyntaxTree::HshPtnKeywordFormatter</a>
   </li>
   <li class="class">
-    <a href="SyntaxTree/HshPtn/KeywordRestFormatter.html">SyntaxTree::HshPtn::KeywordRestFormatter</a>
+    <a href="SyntaxTree/HshPtnKeywordRestFormatter.html">SyntaxTree::HshPtnKeywordRestFormatter</a>
   </li>
   <li class="class">
     <a href="SyntaxTree/IVar.html">SyntaxTree::IVar</a>
@@ -535,13 +528,13 @@
     <a href="SyntaxTree/Params.html">SyntaxTree::Params</a>
   </li>
   <li class="class">
-    <a href="SyntaxTree/Params/KeywordFormatter.html">SyntaxTree::Params::KeywordFormatter</a>
+    <a href="SyntaxTree/ParamsKeywordFormatter.html">SyntaxTree::ParamsKeywordFormatter</a>
   </li>
   <li class="class">
-    <a href="SyntaxTree/Params/KeywordRestFormatter.html">SyntaxTree::Params::KeywordRestFormatter</a>
+    <a href="SyntaxTree/ParamsKeywordRestFormatter.html">SyntaxTree::ParamsKeywordRestFormatter</a>
   </li>
   <li class="class">
-    <a href="SyntaxTree/Params/OptionalFormatter.html">SyntaxTree::Params::OptionalFormatter</a>
+    <a href="SyntaxTree/ParamsOptionalFormatter.html">SyntaxTree::ParamsOptionalFormatter</a>
   </li>
   <li class="class">
     <a href="SyntaxTree/Paren.html">SyntaxTree::Paren</a>
@@ -580,10 +573,16 @@
     <a href="SyntaxTree/QSymbolsBeg.html">SyntaxTree::QSymbolsBeg</a>
   </li>
   <li class="class">
+    <a href="SyntaxTree/QSymbolsFormatter.html">SyntaxTree::QSymbolsFormatter</a>
+  </li>
+  <li class="class">
     <a href="SyntaxTree/QWords.html">SyntaxTree::QWords</a>
   </li>
   <li class="class">
     <a href="SyntaxTree/QWordsBeg.html">SyntaxTree::QWordsBeg</a>
+  </li>
+  <li class="class">
+    <a href="SyntaxTree/QWordsFormatter.html">SyntaxTree::QWordsFormatter</a>
   </li>
   <li class="module">
     <a href="SyntaxTree/Quotes.html">SyntaxTree::Quotes</a>
@@ -709,7 +708,7 @@
     <a href="SyntaxTree/Undef.html">SyntaxTree::Undef</a>
   </li>
   <li class="class">
-    <a href="SyntaxTree/Undef/UndefArgumentFormatter.html">SyntaxTree::Undef::UndefArgumentFormatter</a>
+    <a href="SyntaxTree/UndefArgumentFormatter.html">SyntaxTree::UndefArgumentFormatter</a>
   </li>
   <li class="class">
     <a href="SyntaxTree/Unless.html">SyntaxTree::Unless</a>
@@ -734,6 +733,12 @@
   </li>
   <li class="class">
     <a href="SyntaxTree/VarRef.html">SyntaxTree::VarRef</a>
+  </li>
+  <li class="class">
+    <a href="SyntaxTree/VarRefsFormatter.html">SyntaxTree::VarRefsFormatter</a>
+  </li>
+  <li class="class">
+    <a href="SyntaxTree/Visitor.html">SyntaxTree::Visitor</a>
   </li>
   <li class="class">
     <a href="SyntaxTree/VoidStmt.html">SyntaxTree::VoidStmt</a>
@@ -837,6 +842,11 @@
     <span class="container">SyntaxTree::CLI::Color</span>
 
   <li class="method">
+    <a href="SyntaxTree/Node.html#method-c-inherited">::inherited</a>
+    &mdash;
+    <span class="container">SyntaxTree::Node</span>
+
+  <li class="method">
     <a href="SyntaxTree/Quotes.html#method-c-locked-3F">::locked?</a>
     &mdash;
     <span class="container">SyntaxTree::Quotes</span>
@@ -855,6 +865,101 @@
     <a href="SyntaxTree/Formatter.html#method-c-new">::new</a>
     &mdash;
     <span class="container">SyntaxTree::Formatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/AliasArgumentFormatter.html#method-c-new">::new</a>
+    &mdash;
+    <span class="container">SyntaxTree::AliasArgumentFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/AryPtnRestFormatter.html#method-c-new">::new</a>
+    &mdash;
+    <span class="container">SyntaxTree::AryPtnRestFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/BlockFormatter.html#method-c-new">::new</a>
+    &mdash;
+    <span class="container">SyntaxTree::BlockFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/BlockFormatter/BlockOpenFormatter.html#method-c-new">::new</a>
+    &mdash;
+    <span class="container">SyntaxTree::BlockFormatter::BlockOpenFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/CallOperatorFormatter.html#method-c-new">::new</a>
+    &mdash;
+    <span class="container">SyntaxTree::CallOperatorFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/ConditionalFormatter.html#method-c-new">::new</a>
+    &mdash;
+    <span class="container">SyntaxTree::ConditionalFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/ConditionalModFormatter.html#method-c-new">::new</a>
+    &mdash;
+    <span class="container">SyntaxTree::ConditionalModFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/DotFormatter.html#method-c-new">::new</a>
+    &mdash;
+    <span class="container">SyntaxTree::DotFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/FlowControlFormatter.html#method-c-new">::new</a>
+    &mdash;
+    <span class="container">SyntaxTree::FlowControlFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/HshPtnKeywordFormatter.html#method-c-new">::new</a>
+    &mdash;
+    <span class="container">SyntaxTree::HshPtnKeywordFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/HshPtnKeywordRestFormatter.html#method-c-new">::new</a>
+    &mdash;
+    <span class="container">SyntaxTree::HshPtnKeywordRestFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/LoopFormatter.html#method-c-new">::new</a>
+    &mdash;
+    <span class="container">SyntaxTree::LoopFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/ParamsKeywordFormatter.html#method-c-new">::new</a>
+    &mdash;
+    <span class="container">SyntaxTree::ParamsKeywordFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/ParamsKeywordRestFormatter.html#method-c-new">::new</a>
+    &mdash;
+    <span class="container">SyntaxTree::ParamsKeywordRestFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/ParamsOptionalFormatter.html#method-c-new">::new</a>
+    &mdash;
+    <span class="container">SyntaxTree::ParamsOptionalFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/QWordsFormatter.html#method-c-new">::new</a>
+    &mdash;
+    <span class="container">SyntaxTree::QWordsFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/QSymbolsFormatter.html#method-c-new">::new</a>
+    &mdash;
+    <span class="container">SyntaxTree::QSymbolsFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/UndefArgumentFormatter.html#method-c-new">::new</a>
+    &mdash;
+    <span class="container">SyntaxTree::UndefArgumentFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/VarRefsFormatter.html#method-c-new">::new</a>
+    &mdash;
+    <span class="container">SyntaxTree::VarRefsFormatter</span>
 
   <li class="method">
     <a href="SyntaxTree/LanguageServer.html#method-c-new">::new</a>
@@ -897,11 +1002,6 @@
     <span class="container">SyntaxTree::Alias</span>
 
   <li class="method">
-    <a href="SyntaxTree/Alias/AliasArgumentFormatter.html#method-c-new">::new</a>
-    &mdash;
-    <span class="container">SyntaxTree::Alias::AliasArgumentFormatter</span>
-
-  <li class="method">
     <a href="SyntaxTree/ARef.html#method-c-new">::new</a>
     &mdash;
     <span class="container">SyntaxTree::ARef</span>
@@ -942,29 +1042,9 @@
     <span class="container">SyntaxTree::ArrayLiteral</span>
 
   <li class="method">
-    <a href="SyntaxTree/ArrayLiteral/QWordsFormatter.html#method-c-new">::new</a>
-    &mdash;
-    <span class="container">SyntaxTree::ArrayLiteral::QWordsFormatter</span>
-
-  <li class="method">
-    <a href="SyntaxTree/ArrayLiteral/QSymbolsFormatter.html#method-c-new">::new</a>
-    &mdash;
-    <span class="container">SyntaxTree::ArrayLiteral::QSymbolsFormatter</span>
-
-  <li class="method">
-    <a href="SyntaxTree/ArrayLiteral/VarRefsFormatter.html#method-c-new">::new</a>
-    &mdash;
-    <span class="container">SyntaxTree::ArrayLiteral::VarRefsFormatter</span>
-
-  <li class="method">
     <a href="SyntaxTree/AryPtn.html#method-c-new">::new</a>
     &mdash;
     <span class="container">SyntaxTree::AryPtn</span>
-
-  <li class="method">
-    <a href="SyntaxTree/AryPtn/RestFormatter.html#method-c-new">::new</a>
-    &mdash;
-    <span class="container">SyntaxTree::AryPtn::RestFormatter</span>
 
   <li class="method">
     <a href="SyntaxTree/Assign.html#method-c-new">::new</a>
@@ -1027,34 +1107,14 @@
     <span class="container">SyntaxTree::BodyStmt</span>
 
   <li class="method">
-    <a href="SyntaxTree/BlockFormatter.html#method-c-new">::new</a>
-    &mdash;
-    <span class="container">SyntaxTree::BlockFormatter</span>
-
-  <li class="method">
-    <a href="SyntaxTree/BlockFormatter/BlockOpenFormatter.html#method-c-new">::new</a>
-    &mdash;
-    <span class="container">SyntaxTree::BlockFormatter::BlockOpenFormatter</span>
-
-  <li class="method">
     <a href="SyntaxTree/BraceBlock.html#method-c-new">::new</a>
     &mdash;
     <span class="container">SyntaxTree::BraceBlock</span>
 
   <li class="method">
-    <a href="SyntaxTree/FlowControlFormatter.html#method-c-new">::new</a>
-    &mdash;
-    <span class="container">SyntaxTree::FlowControlFormatter</span>
-
-  <li class="method">
     <a href="SyntaxTree/Break.html#method-c-new">::new</a>
     &mdash;
     <span class="container">SyntaxTree::Break</span>
-
-  <li class="method">
-    <a href="SyntaxTree/CallOperatorFormatter.html#method-c-new">::new</a>
-    &mdash;
-    <span class="container">SyntaxTree::CallOperatorFormatter</span>
 
   <li class="method">
     <a href="SyntaxTree/Call.html#method-c-new">::new</a>
@@ -1150,11 +1210,6 @@
     <a href="SyntaxTree/DoBlock.html#method-c-new">::new</a>
     &mdash;
     <span class="container">SyntaxTree::DoBlock</span>
-
-  <li class="method">
-    <a href="SyntaxTree/DotFormatter.html#method-c-new">::new</a>
-    &mdash;
-    <span class="container">SyntaxTree::DotFormatter</span>
 
   <li class="method">
     <a href="SyntaxTree/Dot2.html#method-c-new">::new</a>
@@ -1262,24 +1317,9 @@
     <span class="container">SyntaxTree::HshPtn</span>
 
   <li class="method">
-    <a href="SyntaxTree/HshPtn/KeywordFormatter.html#method-c-new">::new</a>
-    &mdash;
-    <span class="container">SyntaxTree::HshPtn::KeywordFormatter</span>
-
-  <li class="method">
-    <a href="SyntaxTree/HshPtn/KeywordRestFormatter.html#method-c-new">::new</a>
-    &mdash;
-    <span class="container">SyntaxTree::HshPtn::KeywordRestFormatter</span>
-
-  <li class="method">
     <a href="SyntaxTree/Ident.html#method-c-new">::new</a>
     &mdash;
     <span class="container">SyntaxTree::Ident</span>
-
-  <li class="method">
-    <a href="SyntaxTree/ConditionalFormatter.html#method-c-new">::new</a>
-    &mdash;
-    <span class="container">SyntaxTree::ConditionalFormatter</span>
 
   <li class="method">
     <a href="SyntaxTree/If.html#method-c-new">::new</a>
@@ -1290,11 +1330,6 @@
     <a href="SyntaxTree/IfOp.html#method-c-new">::new</a>
     &mdash;
     <span class="container">SyntaxTree::IfOp</span>
-
-  <li class="method">
-    <a href="SyntaxTree/ConditionalModFormatter.html#method-c-new">::new</a>
-    &mdash;
-    <span class="container">SyntaxTree::ConditionalModFormatter</span>
 
   <li class="method">
     <a href="SyntaxTree/IfMod.html#method-c-new">::new</a>
@@ -1410,21 +1445,6 @@
     <a href="SyntaxTree/Params.html#method-c-new">::new</a>
     &mdash;
     <span class="container">SyntaxTree::Params</span>
-
-  <li class="method">
-    <a href="SyntaxTree/Params/OptionalFormatter.html#method-c-new">::new</a>
-    &mdash;
-    <span class="container">SyntaxTree::Params::OptionalFormatter</span>
-
-  <li class="method">
-    <a href="SyntaxTree/Params/KeywordFormatter.html#method-c-new">::new</a>
-    &mdash;
-    <span class="container">SyntaxTree::Params::KeywordFormatter</span>
-
-  <li class="method">
-    <a href="SyntaxTree/Params/KeywordRestFormatter.html#method-c-new">::new</a>
-    &mdash;
-    <span class="container">SyntaxTree::Params::KeywordRestFormatter</span>
 
   <li class="method">
     <a href="SyntaxTree/Paren.html#method-c-new">::new</a>
@@ -1657,11 +1677,6 @@
     <span class="container">SyntaxTree::Undef</span>
 
   <li class="method">
-    <a href="SyntaxTree/Undef/UndefArgumentFormatter.html#method-c-new">::new</a>
-    &mdash;
-    <span class="container">SyntaxTree::Undef::UndefArgumentFormatter</span>
-
-  <li class="method">
     <a href="SyntaxTree/Unless.html#method-c-new">::new</a>
     &mdash;
     <span class="container">SyntaxTree::Unless</span>
@@ -1670,11 +1685,6 @@
     <a href="SyntaxTree/UnlessMod.html#method-c-new">::new</a>
     &mdash;
     <span class="container">SyntaxTree::UnlessMod</span>
-
-  <li class="method">
-    <a href="SyntaxTree/LoopFormatter.html#method-c-new">::new</a>
-    &mdash;
-    <span class="container">SyntaxTree::LoopFormatter</span>
 
   <li class="method">
     <a href="SyntaxTree/Until.html#method-c-new">::new</a>
@@ -1882,9 +1892,9 @@
     <span class="container">SyntaxTree::CLI::Color</span>
 
   <li class="method">
-    <a href="SyntaxTree/CLI.html#method-c-register_handler">::register_handler</a>
+    <a href="SyntaxTree.html#method-c-register_handler">::register_handler</a>
     &mdash;
-    <span class="container">SyntaxTree::CLI</span>
+    <span class="container">SyntaxTree</span>
 
   <li class="method">
     <a href="SyntaxTree/CLI.html#method-c-run">::run</a>
@@ -1905,6 +1915,11 @@
     <a href="SyntaxTree/Location.html#method-c-token">::token</a>
     &mdash;
     <span class="container">SyntaxTree::Location</span>
+
+  <li class="method">
+    <a href="SyntaxTree/Node.html#method-c-visit_method_name">::visit_method_name</a>
+    &mdash;
+    <span class="container">SyntaxTree::Node</span>
 
   <li class="method">
     <a href="SyntaxTree/CLI/Color.html#method-c-yellow">::yellow</a>
@@ -2687,14 +2702,14 @@
     <span class="container">SyntaxTree::ZSuper</span>
 
   <li class="method">
-    <a href="SyntaxTree/Alias/AliasArgumentFormatter.html#method-i-comments">#comments</a>
+    <a href="SyntaxTree/AliasArgumentFormatter.html#method-i-comments">#comments</a>
     &mdash;
-    <span class="container">SyntaxTree::Alias::AliasArgumentFormatter</span>
+    <span class="container">SyntaxTree::AliasArgumentFormatter</span>
 
   <li class="method">
-    <a href="SyntaxTree/AryPtn/RestFormatter.html#method-i-comments">#comments</a>
+    <a href="SyntaxTree/AryPtnRestFormatter.html#method-i-comments">#comments</a>
     &mdash;
-    <span class="container">SyntaxTree::AryPtn::RestFormatter</span>
+    <span class="container">SyntaxTree::AryPtnRestFormatter</span>
 
   <li class="method">
     <a href="SyntaxTree/BlockFormatter/BlockOpenFormatter.html#method-i-comments">#comments</a>
@@ -2707,6 +2722,36 @@
     <span class="container">SyntaxTree::CallOperatorFormatter</span>
 
   <li class="method">
+    <a href="SyntaxTree/HshPtnKeywordFormatter.html#method-i-comments">#comments</a>
+    &mdash;
+    <span class="container">SyntaxTree::HshPtnKeywordFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/HshPtnKeywordRestFormatter.html#method-i-comments">#comments</a>
+    &mdash;
+    <span class="container">SyntaxTree::HshPtnKeywordRestFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/ParamsKeywordFormatter.html#method-i-comments">#comments</a>
+    &mdash;
+    <span class="container">SyntaxTree::ParamsKeywordFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/ParamsKeywordRestFormatter.html#method-i-comments">#comments</a>
+    &mdash;
+    <span class="container">SyntaxTree::ParamsKeywordRestFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/ParamsOptionalFormatter.html#method-i-comments">#comments</a>
+    &mdash;
+    <span class="container">SyntaxTree::ParamsOptionalFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/UndefArgumentFormatter.html#method-i-comments">#comments</a>
+    &mdash;
+    <span class="container">SyntaxTree::UndefArgumentFormatter</span>
+
+  <li class="method">
     <a href="SyntaxTree/Comment.html#method-i-comments">#comments</a>
     &mdash;
     <span class="container">SyntaxTree::Comment</span>
@@ -2715,36 +2760,6 @@
     <a href="SyntaxTree/EmbDoc.html#method-i-comments">#comments</a>
     &mdash;
     <span class="container">SyntaxTree::EmbDoc</span>
-
-  <li class="method">
-    <a href="SyntaxTree/HshPtn/KeywordFormatter.html#method-i-comments">#comments</a>
-    &mdash;
-    <span class="container">SyntaxTree::HshPtn::KeywordFormatter</span>
-
-  <li class="method">
-    <a href="SyntaxTree/HshPtn/KeywordRestFormatter.html#method-i-comments">#comments</a>
-    &mdash;
-    <span class="container">SyntaxTree::HshPtn::KeywordRestFormatter</span>
-
-  <li class="method">
-    <a href="SyntaxTree/Params/OptionalFormatter.html#method-i-comments">#comments</a>
-    &mdash;
-    <span class="container">SyntaxTree::Params::OptionalFormatter</span>
-
-  <li class="method">
-    <a href="SyntaxTree/Params/KeywordFormatter.html#method-i-comments">#comments</a>
-    &mdash;
-    <span class="container">SyntaxTree::Params::KeywordFormatter</span>
-
-  <li class="method">
-    <a href="SyntaxTree/Params/KeywordRestFormatter.html#method-i-comments">#comments</a>
-    &mdash;
-    <span class="container">SyntaxTree::Params::KeywordRestFormatter</span>
-
-  <li class="method">
-    <a href="SyntaxTree/Undef/UndefArgumentFormatter.html#method-i-comments">#comments</a>
-    &mdash;
-    <span class="container">SyntaxTree::Undef::UndefArgumentFormatter</span>
 
   <li class="method">
     <a href="PrettyPrint.html#method-i-current_group">#current_group</a>
@@ -4192,6 +4207,101 @@
     <span class="container">SyntaxTree::Formatter</span>
 
   <li class="method">
+    <a href="SyntaxTree/AliasArgumentFormatter.html#method-i-format">#format</a>
+    &mdash;
+    <span class="container">SyntaxTree::AliasArgumentFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/AryPtnRestFormatter.html#method-i-format">#format</a>
+    &mdash;
+    <span class="container">SyntaxTree::AryPtnRestFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/BlockFormatter.html#method-i-format">#format</a>
+    &mdash;
+    <span class="container">SyntaxTree::BlockFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/BlockFormatter/BlockOpenFormatter.html#method-i-format">#format</a>
+    &mdash;
+    <span class="container">SyntaxTree::BlockFormatter::BlockOpenFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/CallOperatorFormatter.html#method-i-format">#format</a>
+    &mdash;
+    <span class="container">SyntaxTree::CallOperatorFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/ConditionalFormatter.html#method-i-format">#format</a>
+    &mdash;
+    <span class="container">SyntaxTree::ConditionalFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/ConditionalModFormatter.html#method-i-format">#format</a>
+    &mdash;
+    <span class="container">SyntaxTree::ConditionalModFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/DotFormatter.html#method-i-format">#format</a>
+    &mdash;
+    <span class="container">SyntaxTree::DotFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/FlowControlFormatter.html#method-i-format">#format</a>
+    &mdash;
+    <span class="container">SyntaxTree::FlowControlFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/HshPtnKeywordFormatter.html#method-i-format">#format</a>
+    &mdash;
+    <span class="container">SyntaxTree::HshPtnKeywordFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/HshPtnKeywordRestFormatter.html#method-i-format">#format</a>
+    &mdash;
+    <span class="container">SyntaxTree::HshPtnKeywordRestFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/LoopFormatter.html#method-i-format">#format</a>
+    &mdash;
+    <span class="container">SyntaxTree::LoopFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/ParamsKeywordFormatter.html#method-i-format">#format</a>
+    &mdash;
+    <span class="container">SyntaxTree::ParamsKeywordFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/ParamsKeywordRestFormatter.html#method-i-format">#format</a>
+    &mdash;
+    <span class="container">SyntaxTree::ParamsKeywordRestFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/ParamsOptionalFormatter.html#method-i-format">#format</a>
+    &mdash;
+    <span class="container">SyntaxTree::ParamsOptionalFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/QWordsFormatter.html#method-i-format">#format</a>
+    &mdash;
+    <span class="container">SyntaxTree::QWordsFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/QSymbolsFormatter.html#method-i-format">#format</a>
+    &mdash;
+    <span class="container">SyntaxTree::QSymbolsFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/UndefArgumentFormatter.html#method-i-format">#format</a>
+    &mdash;
+    <span class="container">SyntaxTree::UndefArgumentFormatter</span>
+
+  <li class="method">
+    <a href="SyntaxTree/VarRefsFormatter.html#method-i-format">#format</a>
+    &mdash;
+    <span class="container">SyntaxTree::VarRefsFormatter</span>
+
+  <li class="method">
     <a href="SyntaxTree/Node.html#method-i-format">#format</a>
     &mdash;
     <span class="container">SyntaxTree::Node</span>
@@ -4220,11 +4330,6 @@
     <a href="SyntaxTree/Alias.html#method-i-format">#format</a>
     &mdash;
     <span class="container">SyntaxTree::Alias</span>
-
-  <li class="method">
-    <a href="SyntaxTree/Alias/AliasArgumentFormatter.html#method-i-format">#format</a>
-    &mdash;
-    <span class="container">SyntaxTree::Alias::AliasArgumentFormatter</span>
 
   <li class="method">
     <a href="SyntaxTree/ARef.html#method-i-format">#format</a>
@@ -4267,29 +4372,9 @@
     <span class="container">SyntaxTree::ArrayLiteral</span>
 
   <li class="method">
-    <a href="SyntaxTree/ArrayLiteral/QWordsFormatter.html#method-i-format">#format</a>
-    &mdash;
-    <span class="container">SyntaxTree::ArrayLiteral::QWordsFormatter</span>
-
-  <li class="method">
-    <a href="SyntaxTree/ArrayLiteral/QSymbolsFormatter.html#method-i-format">#format</a>
-    &mdash;
-    <span class="container">SyntaxTree::ArrayLiteral::QSymbolsFormatter</span>
-
-  <li class="method">
-    <a href="SyntaxTree/ArrayLiteral/VarRefsFormatter.html#method-i-format">#format</a>
-    &mdash;
-    <span class="container">SyntaxTree::ArrayLiteral::VarRefsFormatter</span>
-
-  <li class="method">
     <a href="SyntaxTree/AryPtn.html#method-i-format">#format</a>
     &mdash;
     <span class="container">SyntaxTree::AryPtn</span>
-
-  <li class="method">
-    <a href="SyntaxTree/AryPtn/RestFormatter.html#method-i-format">#format</a>
-    &mdash;
-    <span class="container">SyntaxTree::AryPtn::RestFormatter</span>
 
   <li class="method">
     <a href="SyntaxTree/Assign.html#method-i-format">#format</a>
@@ -4352,34 +4437,14 @@
     <span class="container">SyntaxTree::BodyStmt</span>
 
   <li class="method">
-    <a href="SyntaxTree/BlockFormatter.html#method-i-format">#format</a>
-    &mdash;
-    <span class="container">SyntaxTree::BlockFormatter</span>
-
-  <li class="method">
-    <a href="SyntaxTree/BlockFormatter/BlockOpenFormatter.html#method-i-format">#format</a>
-    &mdash;
-    <span class="container">SyntaxTree::BlockFormatter::BlockOpenFormatter</span>
-
-  <li class="method">
     <a href="SyntaxTree/BraceBlock.html#method-i-format">#format</a>
     &mdash;
     <span class="container">SyntaxTree::BraceBlock</span>
 
   <li class="method">
-    <a href="SyntaxTree/FlowControlFormatter.html#method-i-format">#format</a>
-    &mdash;
-    <span class="container">SyntaxTree::FlowControlFormatter</span>
-
-  <li class="method">
     <a href="SyntaxTree/Break.html#method-i-format">#format</a>
     &mdash;
     <span class="container">SyntaxTree::Break</span>
-
-  <li class="method">
-    <a href="SyntaxTree/CallOperatorFormatter.html#method-i-format">#format</a>
-    &mdash;
-    <span class="container">SyntaxTree::CallOperatorFormatter</span>
 
   <li class="method">
     <a href="SyntaxTree/Call.html#method-i-format">#format</a>
@@ -4465,11 +4530,6 @@
     <a href="SyntaxTree/DoBlock.html#method-i-format">#format</a>
     &mdash;
     <span class="container">SyntaxTree::DoBlock</span>
-
-  <li class="method">
-    <a href="SyntaxTree/DotFormatter.html#method-i-format">#format</a>
-    &mdash;
-    <span class="container">SyntaxTree::DotFormatter</span>
 
   <li class="method">
     <a href="SyntaxTree/Dot2.html#method-i-format">#format</a>
@@ -4562,24 +4622,9 @@
     <span class="container">SyntaxTree::HshPtn</span>
 
   <li class="method">
-    <a href="SyntaxTree/HshPtn/KeywordFormatter.html#method-i-format">#format</a>
-    &mdash;
-    <span class="container">SyntaxTree::HshPtn::KeywordFormatter</span>
-
-  <li class="method">
-    <a href="SyntaxTree/HshPtn/KeywordRestFormatter.html#method-i-format">#format</a>
-    &mdash;
-    <span class="container">SyntaxTree::HshPtn::KeywordRestFormatter</span>
-
-  <li class="method">
     <a href="SyntaxTree/Ident.html#method-i-format">#format</a>
     &mdash;
     <span class="container">SyntaxTree::Ident</span>
-
-  <li class="method">
-    <a href="SyntaxTree/ConditionalFormatter.html#method-i-format">#format</a>
-    &mdash;
-    <span class="container">SyntaxTree::ConditionalFormatter</span>
 
   <li class="method">
     <a href="SyntaxTree/If.html#method-i-format">#format</a>
@@ -4590,11 +4635,6 @@
     <a href="SyntaxTree/IfOp.html#method-i-format">#format</a>
     &mdash;
     <span class="container">SyntaxTree::IfOp</span>
-
-  <li class="method">
-    <a href="SyntaxTree/ConditionalModFormatter.html#method-i-format">#format</a>
-    &mdash;
-    <span class="container">SyntaxTree::ConditionalModFormatter</span>
 
   <li class="method">
     <a href="SyntaxTree/IfMod.html#method-i-format">#format</a>
@@ -4705,21 +4745,6 @@
     <a href="SyntaxTree/Params.html#method-i-format">#format</a>
     &mdash;
     <span class="container">SyntaxTree::Params</span>
-
-  <li class="method">
-    <a href="SyntaxTree/Params/OptionalFormatter.html#method-i-format">#format</a>
-    &mdash;
-    <span class="container">SyntaxTree::Params::OptionalFormatter</span>
-
-  <li class="method">
-    <a href="SyntaxTree/Params/KeywordFormatter.html#method-i-format">#format</a>
-    &mdash;
-    <span class="container">SyntaxTree::Params::KeywordFormatter</span>
-
-  <li class="method">
-    <a href="SyntaxTree/Params/KeywordRestFormatter.html#method-i-format">#format</a>
-    &mdash;
-    <span class="container">SyntaxTree::Params::KeywordRestFormatter</span>
 
   <li class="method">
     <a href="SyntaxTree/Paren.html#method-i-format">#format</a>
@@ -4872,11 +4897,6 @@
     <span class="container">SyntaxTree::Undef</span>
 
   <li class="method">
-    <a href="SyntaxTree/Undef/UndefArgumentFormatter.html#method-i-format">#format</a>
-    &mdash;
-    <span class="container">SyntaxTree::Undef::UndefArgumentFormatter</span>
-
-  <li class="method">
     <a href="SyntaxTree/Unless.html#method-i-format">#format</a>
     &mdash;
     <span class="container">SyntaxTree::Unless</span>
@@ -4885,11 +4905,6 @@
     <a href="SyntaxTree/UnlessMod.html#method-i-format">#format</a>
     &mdash;
     <span class="container">SyntaxTree::UnlessMod</span>
-
-  <li class="method">
-    <a href="SyntaxTree/LoopFormatter.html#method-i-format">#format</a>
-    &mdash;
-    <span class="container">SyntaxTree::LoopFormatter</span>
 
   <li class="method">
     <a href="SyntaxTree/Until.html#method-i-format">#format</a>
@@ -6675,6 +6690,16 @@
     <a href="PrettyPrint/Buffer/ArrayBuffer.html#method-i-trim-21">#trim!</a>
     &mdash;
     <span class="container">PrettyPrint::Buffer::ArrayBuffer</span>
+
+  <li class="method">
+    <a href="SyntaxTree/Visitor.html#method-i-visit">#visit</a>
+    &mdash;
+    <span class="container">SyntaxTree::Visitor</span>
+
+  <li class="method">
+    <a href="SyntaxTree/Visitor.html#method-i-visit_all">#visit_all</a>
+    &mdash;
+    <span class="container">SyntaxTree::Visitor</span>
 
   <li class="method">
     <a href="PrettyPrint.html#method-i-with_target">#with_target</a>
